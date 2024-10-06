@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    h1 {
+      background: blue;
+      color: aliceblue;
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+      align-content: center;
+      text-align: center;
+      /* margin-top: 300px; */
+    }
+  </style>
+  <body>
+    <div id="root">
+      <h1>Hello</h1>
+      <!-- <h2 class="heading">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, amet?
+      </h2> -->
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      gsap.to("h1", {
+        x: 300,
+        duration: 1,
+        // repeat: -1,
+        // yoyo: true,
+        ease: "bounce.out",
+      });
+      //   gsap.to("h1", { x: 500, duration: 2, delay: 2 });
+      //   gsap.to(".heading", { y: 200, duration: 2, delay: 2 });
+    </script>
+  </body>
+</html>
